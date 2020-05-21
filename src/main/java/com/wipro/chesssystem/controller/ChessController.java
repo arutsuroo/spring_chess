@@ -27,7 +27,7 @@ public class ChessController {
         for (ChessPositionDto dto : move){
             chessPositions.add(chessMapper.fromDto(dto));
         }
-       return  service.move(chessPositions);
+       return service.move(chessPositions);
     }
 
     @PostMapping("/list-options")
